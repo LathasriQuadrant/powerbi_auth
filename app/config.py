@@ -13,9 +13,7 @@ BLOB_CONTAINER = os.getenv("BLOB_CONTAINER")
 EMPTY_PBIX_NAME = os.getenv("EMPTY_PBIX_NAME")
 
 POWERBI_SCOPE = [
-    "openid",
-    "profile",
-    "email",
+
     "https://analysis.windows.net/powerbi/api/.default"
 ]
 
