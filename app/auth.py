@@ -33,7 +33,7 @@ def auth_callback(request: Request, code: str):
 
     # Store token in session
     request.session["access_token"] = token["access_token"]
-    # request.session["user"] = token.get("id_token_claims")   #this added
+    request.session["user"] = token.get("id_token_claims")   #this added
 
     # Redirect to frontend success page
     return RedirectResponse(
